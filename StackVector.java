@@ -2,26 +2,26 @@
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
 
-Fecha: 11 de febrero de 2019
+Fecha: 01 de febrero de 2019
 Proposito: Esta clase es el Stack o pila, y esta implementa
 a la interfaz Stack. Esta clase contiene los metodos que se
 utilizaran para interactuar con la pila
  */
 //Se importa la libreria necesaria
-import java.util.ArrayList;
+import java.util.*;
 
 //Esta clase es generica, pues aun no sabemos de que tipo van a ser
 //lo valores que maneje
-public class StackArrayList<E> extends AbstractStack<E> {
+public class StackVector<E> extends AbstractStack<E> {
 
-    //Unico atributo de la clase, un arraylist generico
-    protected ArrayList<E> data;
+    //Unico atributo de la clase, un vector generico
+    protected Vector<E> data;
 
 
     //Constructor
-    public StackArrayList()
+    public StackVector()
     {
-        data = new ArrayList<E>();
+        data = new Vector<E>();
     }
 
     //Este metodo se encarga de agregar en el ultimo lugar
