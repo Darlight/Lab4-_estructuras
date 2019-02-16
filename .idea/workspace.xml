@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9c0a84-6c8f-4b81-96ff-5ef0adb1d2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CircularList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoubleLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLinkedNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FactoryList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InterfaceList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainCalculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StackArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +167,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550279786107" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550280795116" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
