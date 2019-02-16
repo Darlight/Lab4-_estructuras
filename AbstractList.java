@@ -7,13 +7,14 @@ Proposito: Esta clase es la interfaz de Stack, y es generica
 porque no se sabe con que tipo de dato se trabajara. La clase
 StackArrayList hereda sus metodos de esta interfaz.
  */
-public abstract class AbstractList<E>{
+public abstract class AbstractList<E> implements List<E>{
     public AbstractList()
 // post: does nothing
     {
+        return null;
     }
     public boolean isEmpty()
-// post: returns true iff list has no elements
+    // post: returns true iff list has no elements
     {
         return size() == 0;
     }
@@ -68,10 +69,9 @@ public abstract class AbstractList<E>{
     {
         return getLast();
     }
-    public boolean contains(E value)
-// pre: value is not null
-// post: returns true iff list contains an object equal to value
-    {
+    public boolean contains(E value){
+        // pre: value is not null
+         // post: returns true iff list contains an object equal to value
         return -1 != indexOf(value);
     }
 }

@@ -7,7 +7,7 @@ Proposito: Esta clase es la interfaz de List, y es generica
 porque no se sabe con que tipo de dato se trabajara. La clase
 StackArrayList hereda sus metodos de esta interfaz.
  */
-public CircularList<E> extends AbstractList<E> implements List<E>{
+public CircularList<E> extends AbstractList<E>{
     protected Node<E> tail;
     protected int count;
 
