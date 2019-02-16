@@ -2,7 +2,7 @@
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
 
-Fecha: 01 de febrero de 2019
+Fecha: 11 de febrero de 2019
 Proposito: Esta clase es la calculadora, esta implementa la interfaz
 Calculator y se encarga basicamente de realizar los calculos.
  */

@@ -2,7 +2,7 @@
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
 
-Fecha: 01 de febrero de 2019
+Fecha: 11 de febrero de 2019
 Proposito: Esta clase es el Stack o pila, y esta implementa
 a la interfaz Stack. Esta clase contiene los metodos que se
 utilizaran para interactuar con la pila

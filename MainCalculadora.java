@@ -2,7 +2,7 @@
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
 
-Fecha: 01 de febrero de 2019
+Fecha: 11 de febrero de 2019
 Proposito: Esta clase es el main de la Hoja de Trabajo 2, es decir,
 esta el la clase encargada de interactuar con el usuario, pues
 le pide datos y tambien es la unica que puede mostrar datos en pantalla.

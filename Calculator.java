@@ -2,7 +2,7 @@
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
 
-Fecha: 01 de febrero de 2019
+Fecha: 11 de febrero de 2019
 Proposito: Esta clase es la interfaz Calculator, de donde
 la clase calculadora obtiene su unico metodo para calcular.
  */
