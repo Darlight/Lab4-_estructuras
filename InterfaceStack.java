@@ -10,13 +10,16 @@ StackArrayList hereda sus metodos de esta interfaz.
 public interface InterfaceStack<E> {
 
     public void push(E item);
+    //Empuja el item a la pila
 
     public E pop();
+    //Saca el primer elemento de la pila
 
     public E peek();
-
+    //
     public boolean empty();
-
+    //Vacia la pila
     public int size();
+    //El tamanio de la pila
 
 }

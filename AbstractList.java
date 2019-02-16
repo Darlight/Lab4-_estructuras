@@ -7,7 +7,7 @@ Proposito: Esta clase es la interfaz de Stack, y es generica
 porque no se sabe con que tipo de dato se trabajara. La clase
 StackArrayList hereda sus metodos de esta interfaz.
  */
-public abstract class AbstractList<E> extends AbstractStructure<E> implements InterfaceList<E>{
+public abstract class AbstractList<E>{
     public AbstractList()
 // post: does nothing
     {

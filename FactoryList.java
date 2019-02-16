@@ -10,11 +10,16 @@ StackArrayList hereda sus metodos de esta interfaz.
 class FactoryList<E> {
     //selecciona la implementacion a utilizar para un stack
     //se utiliza el patron Factory
-    public Stack<E> getStack(String entry) {
+    public List<E> getList(String entry) {
         // seleccion de la implementacion a utilizar:
-        if (entry.equals("AL"))
-            return new StackArrayList<E>(); //regresa ArrayList
-        else
-            return new StackVector<E>(); //regresa Vector
+        if (entry.equals("SL") {
+            return new SinglyLinkedList<E>(); //regresa un Singly Linked List
+        }
+        if (entry.equals("DL")) {
+            return new DoublyLinkedList<E>(); //regresa Un doubly linked list
+        }
+        else{
+            return  new CircularList<E>();// Regresa un circular List
+        }
     }
 }

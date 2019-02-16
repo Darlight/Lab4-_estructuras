@@ -7,17 +7,15 @@ Proposito: Esta clase es la interfaz de Stack, y es generica
 porque no se sabe con que tipo de dato se trabajara. La clase
 StackArrayList hereda sus metodos de esta interfaz.
  */
-public class Node<E>
-{
+public class Node<E> {
     protected E data; // value stored in this element
     protected Node<E> nextElement; // ref to next
 
-    public Node(E v, Node<E> next)
+    public Node(E v, Node<E> next){
     // pre: v is a value, next is a reference to
     //      remainder of list
     // post: an element is constructed as the new
     //      head of list
-    {
         data = v;
         nextElement = next;
     }

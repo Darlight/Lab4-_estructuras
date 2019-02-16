@@ -7,8 +7,7 @@ Proposito: Esta clase es la interfaz de List, y es generica
 porque no se sabe con que tipo de dato se trabajara. La clase
 StackArrayList hereda sus metodos de esta interfaz.
  */
-public interface List<E>
-{
+public interface List<E>    {
 
     public int size();
     // post: returns number of elements in list
