@@ -22,13 +22,13 @@ public class Calculadora implements Calculator{
             resultado = num1 + num2;
         } else if (op == "-"){
             //Si es -, entonces resta
-            resultado = num1 - num2;
+            resultado = num2 - num1;
         } else if (op == "*"){
             //Si es *, entonces multiplica
             resultado = num1 * num2;
         } else if (op == "/"){
             //Si es /, entonces divide
-            resultado = num1/num2;
+            resultado = num2/num1;
         } else {
             //En caso de que no sea ninguno
             //Entonces se le asignara un 0
