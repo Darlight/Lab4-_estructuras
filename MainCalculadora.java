@@ -14,13 +14,23 @@ public class MainCalculadora {
     public static void main(String[] args){
         //Se declaran las variables con las que trabajara esta clase
         String direccion, texto;
-
+        int opcion1, opcion2;
+        String menu1 = "Indique la implementacion que desea usar para el stack\n" +
+                "1. ArrayList\n2. Vector\n3. Lista",
+        menu2 = "Indique la implementacion de listas a emplear\n" +
+                "1. Simplemente encadenada\n2. Doblemente encadenada\n3. Lista circular",
+        error = "El numero que ingreso no es valido, ingreselo nuevamente";
         //Se instancian todas los objetos necesarios para el funcionamiento
         //del programa
         //El objeto calculadora, encargada de hacer las operaciones
         Calculadora calculadora = new Calculadora();
+
+
         //El objeto stack, esta contiene los metodos de una pila
-        StackArrayList<Integer> pila = new StackArrayList<>();
+        //StackArrayList<Integer> pila = new StackArrayList<>();
+        StackFactory<Integer> stackFactory = new StackFactory<Integer>();
+
+
         //El objeto archivo, esta se encarga de leer el archivo de texto
         Archivos archivo = new Archivos();
         //El bojeto scanner, encargada de recibir datos ingresador por el
@@ -42,34 +52,66 @@ public class MainCalculadora {
         //Esta se separa cada vez que se encuentre un " "
         String[] lista = texto.split(" ");
 
+        System.out.println(menu1);
+        opcion1 = scan.nextInt();
+
+        while (opcion1 != 1 || 2 || 3){
+            if (opcion1 == 1){
+                Stack<String> stack = stackFactory.getStack("AL");
+            } else if (opcion1 == 2){
+                Stack<String> stack = stackFactory.getStack("V");
+            } else if (opcion1 == 3){
+                System.out.println(menu2);
+                opcion2 = scan.nextInt();
+
+                while (opcion2 != 1 || 2 || 3){
+                    if (opcion2 == 1){
+                        u
+                    } else if (opcion2 == 2){
+
+                    } else if (opcion2 == 3){
+
+                    } else {
+                        System.out.println(error);
+                        System.out.println(menu2);
+                        opcion2 = scan.nextInt();
+                    }
+                }
+            } else {
+                System.out.println(error);
+                System.out.println(menu1);
+                opcion1 = scan.nextInt();
+            }
+        }
+
         //Para cada elemento que se encuentra dentro del arreglo lista...
         for (int i = 0; i < lista.length; i++){
             //Si el elemento en cuestion es un signo +, entonces...
             if (lista[i].equals("+")){
                 //Se realizan los calculos con el metodo Calculate
-                pila.push(calculadora.Calculate(pila.pop(), pila.pop(), "+"));
+                stack.push(calculadora.Calculate(pila.pop(), pila.pop(), "+"));
 
             //Si el elemento en cuestion es un signo -, entonces se hace lo mismo que en
             //la condicion anterior
             } else if (lista[i].equals("-")){
-                pila.push(calculadora.Calculate(pila.pop(), pila.pop(), "-"));
+                stack.push(calculadora.Calculate(pila.pop(), pila.pop(), "-"));
 
              //Si el elemento es *...
             } else if (lista[i].equals("*")){
-                pila.push(calculadora.Calculate(pila.pop(), pila.pop(), "*"));
+                stack.push(calculadora.Calculate(pila.pop(), pila.pop(), "*"));
 
              //Si el elemento es /...
             }else if (lista[i].equals("/")){
-                pila.push(calculadora.Calculate(pila.pop(), pila.pop(), "/"));
+                stack.push(calculadora.Calculate(pila.pop(), pila.pop(), "/"));
 
              //En cambio, si no es ningun signo que represente un operador, entonces
              //Este se tomara como un numero y lo agregara a la pila
             } else {
-                pila.push(Integer.parseInt(lista[i]));
+                stack.push(Integer.parseInt(lista[i]));
             }
         }
         //Luego de recorrer todos los elementos de la lista
         //Se muestra el resultado de todas las operaciones en pantalla
-        System.out.println("El resultado es: " + pila.pop());
+        System.out.println("El resultado es: " + stack.pop());
     }
 }
